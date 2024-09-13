@@ -1,6 +1,5 @@
 import streamlit as st
 from transformers import pipeline
-from dotenv import load_dotenv
 import os
 from langchain.docstore.document import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -11,8 +10,7 @@ import torch
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from io import BytesIO
 
-# Load environment variables
-load_dotenv()
+
 
 # Set the Hugging Face API key
 os.environ["HF_API_KEY"] = "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"
